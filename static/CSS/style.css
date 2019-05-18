@@ -1,27 +1,109 @@
 body{
     display: flex;
+    color: white;
+    text-decoration: none
+}
+a{
+    text-decoration: none
 }
 #grid{
 display: grid;
 width: 100%;
-grid-template-areas: "header header header header"
-                     "nav nav nav nav "
+grid-template-areas: "header header header header"  
+                    
                      "section section section section"
                      "footer footer footer footer";
-grid-template-rows: 10vw 20vw 20vw 10vw;
+grid-template-rows: 0.4vw  50VW 10vw 10vw;
 }
 header{
     grid-area: header;
-    background-color: black;
+       background-color:#f5a637;
     display: flex
 }
+
 nav{
     grid-area: nav;
-    background-color: royalblue
+    display: flex;
+    color: white;   
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px
+}
+nav h1{
+    display: flex;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-family: 'Playball', cursive;
+    font-size: 35px;
+    margin: 0;
+    
+}
+nav div{
+    display: flex;
+}
+nav a{
+    color: white
+}
+nav :hover{
+    color: #f5a637
+}
+.menu p{
+    padding: 20px 10px 0 10px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    
+}
+hr{
+    width: 100%;
+    border-color: #f5a637
 }
 section{
+    display: flex;
     grid-area: section;
-    background-color: blue
+    background-image:url(../IMG/burger.jpg);
+    background-color: black;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+}
+strong{
+    color: #f5a637
+}
+section{
+align-items: center;
+text-align: center;
+flex-direction: column
+}
+#sectiontext{
+    text-align: center;
+    width: 400px;
+    height: 75px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+section div h1{
+    color: #f5a637;
+    font-size: 50pt;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    font-family: 'Playball', cursive;
+}
+button{
+    grid-area: section;
+    align-items: center;
+    margin-top: 100px;
+    background: none;
+    color: white;
+    border-color: #f5a637;
+    width: 150px;
+    height: 50px;
+}
+button:hover{
+    color: #f5a637;
+    cursor: pointer;
 }
 footer{
     grid-area: footer;
