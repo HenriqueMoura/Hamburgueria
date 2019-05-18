@@ -113,6 +113,8 @@ button{
     border-color: #f5a637;
     width: 150px;
     height: 50px;
+    font: bolder;
+    font-size: 14pt
 }
 
 button:hover{
