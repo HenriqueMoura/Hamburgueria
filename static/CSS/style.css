@@ -1,0 +1,29 @@
+body{
+    display: flex;
+}
+#grid{
+display: grid;
+width: 100%;
+grid-template-areas: "header header header header"
+                     "nav nav nav nav "
+                     "section section section section"
+                     "footer footer footer footer";
+grid-template-rows: 10vw 20vw 20vw 10vw;
+}
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex
+}
+nav{
+    grid-area: nav;
+    background-color: royalblue
+}
+section{
+    grid-area: section;
+    background-color: blue
+}
+footer{
+    grid-area: footer;
+    background-color: aqua
+}
