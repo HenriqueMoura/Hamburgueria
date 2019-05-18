@@ -54,7 +54,7 @@ nav :hover{
     margin: 0;
     
 }
-hr{
+section hr {
     width: 100%;
     border-color: #f5a637
 }
@@ -77,12 +77,13 @@ align-items: center;
 text-align: center;
 flex-direction: column
 }
-#sectiontext{
+#section{
     text-align: center;
     width: 400px;
     height: 75px;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 section div h1{
     color: #f5a637;
@@ -90,17 +91,30 @@ section div h1{
     margin-bottom: 45px;
     margin-top: 45px;
     font-family: 'Playball', cursive;
+    
+}
+#section i{
+    font-size: 35px;
+    padding-top:30px;
+    width: 50px;
+    height: auto;
+    color: white;
+    justify-content: space-around
+}
+#section i:hover{
+    color: #f5a637
 }
 button{
     grid-area: section;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 80px;
     background: none;
     color: white;
     border-color: #f5a637;
     width: 150px;
     height: 50px;
 }
+
 button:hover{
     color: #f5a637;
     cursor: pointer;
