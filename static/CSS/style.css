@@ -10,10 +10,10 @@ a{
 display: grid;
 width: 100%;
 grid-template-areas: "header header header header"  
-                    
                      "section section section section"
+                     "cont cont cont cont"
                      "footer footer footer footer";
-grid-template-rows: 0.4vw  50VW 10vw 10vw;
+grid-template-rows: 0.4vw  48VW 25vw 10vw 10vw;
 }
 header{
     grid-area: header;
@@ -49,7 +49,7 @@ nav :hover{
     color: #f5a637
 }
 .menu p{
-    padding: 20px 10px 0 10px;
+    padding: 30px 10px 0 10px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     
@@ -81,7 +81,7 @@ flex-direction: column
     text-align: center;
     width: 400px;
     height: 75px;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -120,6 +120,11 @@ button{
 button:hover{
     color: #f5a637;
     cursor: pointer;
+}
+#cont{
+    background: rgb(255,149,1);
+    background: linear-gradient(90deg, rgba(255,149,1,1) 0%, rgba(241,164,55,1) 52%, rgba(227,250,255,1) 99%);
+    grid-area: cont;
 }
 footer{
     grid-area: footer;
