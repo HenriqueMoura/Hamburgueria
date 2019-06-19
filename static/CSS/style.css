@@ -1,3 +1,4 @@
+
 body{
     display: flex;
     color: white;
@@ -12,8 +13,9 @@ width: 100%;
 grid-template-areas: "header header header header"  
                      "section section section section"
                      "cont cont cont cont"
+                     "cont2 cont2 cont2 cont2"
                      "footer footer footer footer";
-grid-template-rows: 0.4vw  48VW 25vw 10vw 10vw;
+grid-template-rows: 0.4vw  48VW 35vw 35vw 10vw 10vw;
 }
 header{
     grid-area: header;
@@ -107,14 +109,15 @@ section div h1{
 button{
     grid-area: section;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 60px;
     background: none;
     color: white;
     border-color: #f5a637;
     width: 150px;
     height: 50px;
     font: bolder;
-    font-size: 14pt
+    font-size: 14pt;
+    border-radius: 5px
 }
 
 button:hover{
@@ -122,10 +125,73 @@ button:hover{
     cursor: pointer;
 }
 #cont{
-    background: rgb(255,149,1);
-    background: linear-gradient(90deg, rgba(255,149,1,1) 0%, rgba(241,164,55,1) 52%, rgba(227,250,255,1) 99%);
     grid-area: cont;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 50px
 }
+#cont div img {
+    width: 225px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+#cont div hr{
+    width: 20%;
+    border-color: #f5a637;
+    display: flex;
+    margin-right: 80%;    
+}
+.text-aside-top p{
+    padding-bottom:80%;
+    padding-right: 25px;
+    width: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17pt;
+    font-weight: bolder;
+
+}
+.text-aside{
+    
+    width:50%;
+    font-size: 13pt
+}
+.text-aside span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+    font-weight: bolder;
+    padding-bottom: 30px
+}
+#cont2{
+        grid-area: cont2;
+        display: flex;
+        align-items: center;
+        color: black;
+        padding: 50px;    
+}
+.text-aside-bottom div{
+    padding-top: 90%;
+    padding-left: 45px;
+    width: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17pt;
+    font-weight: bolder;
+}
+#cont2 div hr{
+    width: 20%;
+    border-color: #f5a637;
+    display: flex;
+    margin-right: 80%;    
+}
+#cont2 div img {
+    width: 225px;
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 35px;
+}
+
+
 footer{
     grid-area: footer;
     background-color: aqua
