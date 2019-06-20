@@ -14,8 +14,9 @@ grid-template-areas: "header header header header"
                      "section section section section"
                      "cont cont cont cont"
                      "cont2 cont2 cont2 cont2"
+                     "menu menu menu menu"
                      "footer footer footer footer";
-grid-template-rows: 0.4vw  48VW 35vw 35vw 10vw 10vw;
+grid-template-rows: 0.4vw  48VW 40vw 40vw 40vw 10vw 10vw;
 }
 header{
     grid-area: header;
@@ -50,7 +51,7 @@ nav a{
 nav :hover{
     color: #f5a637
 }
-.menu p{
+.nav-menu p{
     padding: 30px 10px 0 10px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -83,7 +84,7 @@ flex-direction: column
     text-align: center;
     width: 400px;
     height: 75px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -190,8 +191,84 @@ button:hover{
     border-radius: 10px;
     margin-right: 35px;
 }
+#menu {
+    grid-area: menu;
+    color: black;
+    display: flex;
+}
+#top-menu{
+    align-items: center;
+    text-align: center;
+    flex-direction: column
+}#menu{
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#nav-menu { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: initial;
+    width: 100%;
+    height: 120px;
+    
+}
+#nav-menu :nth-child(1){
+    text-decoration: underline #f5a637;
+}
+#nav-menu p {
+    
+    display: flex;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Playball', cursive;
+    font-size: 15pt;
+    
+    
+}
+#nav-menu p{
+    margin: 0;
+    padding: 0
+}
+.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    margin: 20px 0 ;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.produtos hr{
+    border-color: #f5a637
+}
 
+.produtos img {
+ width: 100px;
+ height: 100px; 
+ border-radius: 5px;
+ margin-right: 20px;
+ margin-left: 20px
+}
 
+.produtos p{
+    font-size: 10pt ;
+    width: 300px;
+}
+.produtos  span {
+    font-size: 13pt;
+    font-weight: bolder
+}
+.preco {
+    width: auto;
+    height: 100px;
+
+}
 footer{
     grid-area: footer;
     background-color: aqua
